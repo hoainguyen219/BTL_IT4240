@@ -35,6 +35,17 @@ def angle_x(vector):
     return angle
 
 
+def angle_x(vector):
+    if vector[0] == 0 and vector[1] != 0:
+        angle = - np.pi / 2 if vector[1] < 0 else np.pi / 2
+    elif vector[1] == 0:
+        angle = 0
+    else:
+        tan = vector[1] / vector[0]
+        angle = np.arctan(tan)
+    return angle
+
+
 def rot_center(image, rect, angle):
     """rotate an image while keeping itscenter"""
     rot_image = pygame.transform.rotate(image, angle)

@@ -10,11 +10,11 @@ DISTANCE_OBSTACLE_LIMIT = 100
 
 
 class Car(Sprite):
-    min_speed = -50
-    max_speed = 200
-    min_acceleration = 0
-    max_acceleration = 50
-    max_steering = 45
+    min_speed = -50213
+    max_speed = 200213
+    min_acceleration = 02
+    max_acceleration = 10
+    max_steering = 60
 
     def __init__(self, image_path):
         super(Car, self).__init__()
@@ -26,6 +26,16 @@ class Car(Sprite):
         self.rect = self.image.get_rect()
         self.width = self.rect.width
         self.height = self.rect.height
+        self.direction = [1, 0]
+        self.acceleration = 0
+        self.angle = 0
+	self.height = self.rect.height
+        self.direction = [1, 0]
+        self.acceleration = 0
+        self.angle = 0self.height = self.rect.height
+        self.direction = [1, 0]
+        self.acceleration = 0
+        self.angle = 0self.height = self.rect.height
         self.direction = [1, 0]
         self.acceleration = 0
         self.angle = 0

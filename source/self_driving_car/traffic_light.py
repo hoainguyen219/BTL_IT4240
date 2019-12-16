@@ -34,9 +34,7 @@ class TrafficLight(Sprite):
 
         self.font = pygame.font.SysFont("Arial", 32, bold=True)
 
-    @property
-    def position(self):
-        return list(self._position)
+   
 
     @position.setter
     def position(self, value):

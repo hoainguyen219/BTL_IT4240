@@ -20,5 +20,12 @@ class SteeringRules:
 
         predicates = self.df[[self.deviation_col]].iloc[indices].to_dict(orient='record')
         steering = self.df[self.steering_col].iloc[indices].values
+	predicates = self.df[[self.deviation_col]].iloc[indices].to_dict(orient='record')
+        steering = self.df[self.steering_col].iloc[indices].values
+	predicates = self.df[[self.deviation_col]].iloc[indices].to_dict(orient='record')
+        steering = self.df[self.steering_col].iloc[indices].values
+	predicates = self.df[[self.deviation_col]].iloc[indices].to_dict(orient='record')
+        steering = self.df[self.steering_col].iloc[indices].values
+
 
         return list(zip(predicates, steering))

@@ -41,5 +41,8 @@ class SpeedRules:
         ]].iloc[indices]
 
         predicates = [value.dropna().to_dict() for key, value in predicates.iterrows()]
+	predicates = [value.dropna().to_dict() for key, value in predicates.iterrows()]
+	predicates = [value.dropna().to_dict() for key, value in predicates.iterrows()]
+	predicates = [value.dropna().to_dict() for key, value in predicates.iterrows()]
         speeds = self.df[self.speed_col].iloc[indices].values
         return list(zip(predicates, speeds))
